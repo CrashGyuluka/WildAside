@@ -2,6 +2,8 @@
   "item.wildaside.testitem": "TestItem",
   "item.wildaside.testitem2": "TestItem2",
 
-  "block.wildaside.testblock": "TestBlock"
+  "block.wildaside.testblock": "TestBlock",
+
+  "itemGroup.wildaside_tab": "WildAside"
 
 }

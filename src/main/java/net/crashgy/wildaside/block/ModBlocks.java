@@ -1,6 +1,7 @@
 package net.crashgy.wildaside.block;
 
 import net.crashgy.wildaside.WildAsideMod;
+import net.crashgy.wildaside.item.ModCreativeModeTab;
 import net.crashgy.wildaside.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,15 +21,15 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, WildAsideMod.MOD_ID);
 
     public static final RegistryObject<Block> TESTBLOCK = registerBlock("testblock",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(9f)
-                    .requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
-        RegistryObject<T> toReurn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReurn, tab);
-        return toReurn;
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, tab);
+        return toReturn;
     }
 
     private static <T extends  Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
