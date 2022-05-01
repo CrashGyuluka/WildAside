@@ -31,6 +31,11 @@ public class ModBlocks {
                     .strength(9f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
+    public static final RegistryObject<Block> SUBSTILIUM_STEAM = registerBlock("substilium_stem",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(9f)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
