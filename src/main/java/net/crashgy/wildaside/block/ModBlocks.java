@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TESTBLOCK = registerBlock("testblock",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(9f)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+
+    public static final RegistryObject<Block> LOGBLOCK = registerBlock("logblock",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(9f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
