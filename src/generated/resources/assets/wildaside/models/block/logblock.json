@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "wildaside:block/logblock_side",
+    "end": "wildaside:block/logblock_top",
+    "particle": "wildaside:block/logblock_side"
+  }
+}
