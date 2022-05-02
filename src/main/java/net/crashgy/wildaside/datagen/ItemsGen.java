@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -40,7 +41,13 @@ public class ItemsGen extends ItemModelProvider {
             }
             else {
                 // blocks handling
-                withExistingParent(name, new ResourceLocation(WildAsideMod.MOD_ID, "block/" + name));
+                if (Helpers.manualJsons(Block.byItem(item.get()))) {
+                    // This is meant to be empty, it is for all blocks listed in Helpers.manualJsons - add elements to
+                    // this list to exclude it from datagen and make .jsons manually
+                }
+                else {
+                    withExistingParent(name, new ResourceLocation(WildAsideMod.MOD_ID, "block/" + name));
+                }
             }
         }
     }
