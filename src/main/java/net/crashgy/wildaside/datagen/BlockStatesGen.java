@@ -32,8 +32,12 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof RotatedPillarBlock) {
                 axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
-            else {
+            else if(!(Helpers.manualJsons(block.get()))) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));
+            }
+            else {
+                // This is meant to be empty, it is for all blocks listed in Helpers.manualJsons - add elements to
+                // this list to exclude it from datagen and make .jsons manually
             }
         }
     }
