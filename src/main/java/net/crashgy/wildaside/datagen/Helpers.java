@@ -1,6 +1,7 @@
 package net.crashgy.wildaside.datagen;
 
 import net.crashgy.wildaside.WildAsideMod;
+import net.crashgy.wildaside.block.ModBlocks;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 
@@ -14,7 +15,9 @@ public class Helpers {
     // Class used for blocks that will have manually handled blockstates and models
     public static Boolean manualJsons(Block block) {
         ArrayList<Block> manual_jsons_list = new ArrayList<>();
-        //manual_jsons_list.add(WildAside.BLOCK_NAME.get()); <- Example of entry (w/o comment)
+        //manual_jsons_list.add(ModBlocks.SUBSTILIUM_STEM.get());
+        //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SHROOM.get());
+        //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SOIL.get());
         return (manual_jsons_list.contains(block));
     }
 
