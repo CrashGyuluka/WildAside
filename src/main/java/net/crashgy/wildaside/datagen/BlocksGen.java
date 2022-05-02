@@ -40,15 +40,14 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage2 + "_top"));
                 sign(pathage, Helpers.BlockPathRef("", pathage2 + "_side"));
             }
-            else {
+            else if(!(Helpers.manualJsons(block.get()))) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
                 sign(pathage, Helpers.BlockPathRef("", pathage));
             }
-            //---------------------------------------------------------------------
-            // SKIPPED
-            // Here are all blockstates that are added manually.
-            // If placed in case I will change my mind and switch them to datagen.
-            //---------------------------------------------------------------------
+            else {
+                // This is meant to be empty, it is for all blocks listed in Helpers.manualJsons - add elements to
+                // this list to exclude it from datagen and make .jsons manually
+            }
         }
     }
 }

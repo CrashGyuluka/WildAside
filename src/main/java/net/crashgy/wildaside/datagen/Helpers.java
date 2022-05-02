@@ -2,8 +2,21 @@ package net.crashgy.wildaside.datagen;
 
 import net.crashgy.wildaside.WildAsideMod;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+
+import java.util.ArrayList;
 
 public class Helpers {
+
+    // --------------------------------------------
+    // LISTS
+    // --------------------------------------------
+    // Class used for blocks that will have manually handled blockstates and models
+    public static Boolean manualJsons(Block block) {
+        ArrayList<Block> manual_jsons_list = new ArrayList<>();
+        //manual_jsons_list.add(WildAside.BLOCK_NAME.get()); <- Example of entry (w/o comment)
+        return (manual_jsons_list.contains(block));
+    }
 
     //ITEM GENERATION
     public static final ResourceLocation ItemPathRef(String namespace, String item) {
@@ -13,7 +26,6 @@ public class Helpers {
         }
         return Item;
     }
-
     //BLOCK GENERATION
     public static final ResourceLocation BlockPathRef(String namespace, String item) {
         ResourceLocation Block = new ResourceLocation(WildAsideMod.MOD_ID + ":block/" + item);
