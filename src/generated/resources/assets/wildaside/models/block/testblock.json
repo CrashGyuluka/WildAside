@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "wildaside:block/testblock",
-    "particle": "wildaside:block/testblock"
-  }
-}
