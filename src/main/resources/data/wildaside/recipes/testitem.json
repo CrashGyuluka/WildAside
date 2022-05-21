@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wildaside:testblock"
+    }
+  ],
+  "result": {
+    "item": "wildaside:testitem",
+    "count": 9
+  }
+}

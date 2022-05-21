@@ -35,6 +35,7 @@ public class ModBlocks {
                     .strength(9f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
+
 //    SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented)
 //    public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
 //            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -59,6 +60,7 @@ public class ModBlocks {
                     .sound(SoundType.SHROOMLIGHT)
                     //.emissiveRendering((a, b, c) -> true)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
