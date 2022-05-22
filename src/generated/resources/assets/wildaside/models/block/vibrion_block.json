@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wildaside:block/vibrion_block",
+    "particle": "wildaside:block/vibrion_block"
+  }
+}

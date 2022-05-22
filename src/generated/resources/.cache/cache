@@ -11,5 +11,5 @@ b8af47449c79ea1114c02fc4feac661e0aa7c7cd assets/wildaside/models/item/testitem.j
 9de3d00b6c24051fbd2f4525a7c13a3a09479a74 assets/wildaside/models/item/testitem2.json
 ab8b4a357e54ae57d7f62bae247ab2306439c8ae assets/wildaside/models/item/vibrion_block.json
 13024dc23ed3e67aee1edf5af0ba039b88c9650f data/wildaside/loot_tables/blocks/logblock.json
-17bbfdef231986b68403c971850252f88c5be949 data/wildaside/loot_tables/blocks/testblock.json
+099a043c0f0ac3d82c24bb01ce7854c7b893b75f data/wildaside/loot_tables/blocks/testblock.json
 39331f27173db12f7a82b546ddd1b68c9157dd71 data/wildaside/loot_tables/blocks/vibrion_block.json
