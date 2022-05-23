@@ -27,12 +27,12 @@ public class ModBlocks {
     //TEST BLOCKS!
     public static final RegistryObject<Block> TESTBLOCK = registerBlock("testblock",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(9f)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> LOGBLOCK = registerBlock("logblock",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(9f)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
@@ -58,9 +58,8 @@ public class ModBlocks {
                     .explosionResistance(1f)
                     .lightLevel(s -> 6)
                     .sound(SoundType.SHROOMLIGHT)
-                    //.emissiveRendering((a, b, c) -> true)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
-
+                    //Help :nooo: I can't remove .requiresCorrect...
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
