@@ -57,9 +57,7 @@ public class ModBlocks {
                     .strength(2.2f)
                     .explosionResistance(1f)
                     .lightLevel(s -> 6)
-                    .sound(SoundType.SHROOMLIGHT)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
-                    //Help :nooo: I can't remove .requiresCorrect...
+                    .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
