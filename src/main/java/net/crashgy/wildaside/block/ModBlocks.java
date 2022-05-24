@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlimeBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -54,7 +55,7 @@ public class ModBlocks {
 //                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> VIBRION_BLOCK = registerBlock("vibrion_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE)
+            () -> new SlimeBlock(BlockBehaviour.Properties.of(Material.VEGETABLE)
                     .strength(2.2f)
                     .explosionResistance(1f)
                     .lightLevel(s -> 6)
