@@ -31,7 +31,7 @@ logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
 credits="CrashGyuluka, Lyof, Toma400, Dylanvhs" #optional
 # A text field displayed in the mod UI
-authors="CrashGyuluka" #optional
+authors="CrashGyuluka, Lyof" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Amazing Biome Mod by Amazing People

@@ -36,7 +36,8 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
-//    SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented)
+//    SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
+//
 //    public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
 //            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
 //                    .strength(3f)
