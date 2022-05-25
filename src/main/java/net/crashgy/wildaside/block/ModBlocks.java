@@ -47,13 +47,13 @@ public class ModBlocks {
 //                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_SHROOM = registerBlock("substilium_shroom",
-//            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+//            () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE)
 //                    .strength(0.3f)
 //                    .explosionResistance(1f)
 //                    .sound(SoundType.WART_BLOCK)), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_SOIL = registerBlock("substilium_soil",
-//            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
+//            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.DIRT)
 //                    .strength(0.5f)
 //                    .explosionResistance(1f)
 //                    .sound(SoundType.NYLIUM)
