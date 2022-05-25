@@ -37,28 +37,33 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
-//    SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
-//
+    //SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
+
 //    public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
-//            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
+//            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.VEGETABLE)
 //                    .strength(3f)
+//                    .explosionResistance(2f)
+//                    .sound(SoundType.STEM)
 //                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_SHROOM = registerBlock("substilium_shroom",
 //            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
 //                    .strength(0.3f)
-//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//                    .explosionResistance(1f)
+//                    .sound(SoundType.WART_BLOCK)), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_SOIL = registerBlock("substilium_soil",
 //            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD)
-//                    .strength(0.6f)
+//                    .strength(0.5f)
+//                    .explosionResistance(1f)
+//                    .sound(SoundType.NYLIUM)
 //                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> VIBRION_BLOCK = registerBlock("vibrion_block",
             () -> new SlimeBlock(BlockBehaviour.Properties.of(Material.VEGETABLE)
                     .strength(2.2f)
                     .explosionResistance(1f)
-                    .lightLevel(s -> 6)
+                    .lightLevel(s -> 7)
                     .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)

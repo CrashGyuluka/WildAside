@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "wildaside:logblock"
+    "wildaside:logblock",
+    "wildaside:substilium_soil"
   ]
 }
