@@ -1,5 +1,2 @@
 All textures by Dylanvhs & CrashGyuluka
-Datagen by Toma400
-
-distributed under CC BY-SA 4.0 International License:
-https://creativecommons.org/licenses/by-sa/4.0/
+Datagen and License by Toma400
