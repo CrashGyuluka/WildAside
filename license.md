@@ -84,6 +84,8 @@ shared with anyone)
 (gameplay videos)
 3.4. Creating modpacks with product
 
+4. *REMOVED*
+
 As long as none of the above breaks core game EULA.
 
 -----------------------------------------------------------------------
