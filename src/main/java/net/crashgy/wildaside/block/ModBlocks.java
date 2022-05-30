@@ -66,6 +66,7 @@ public class ModBlocks {
                     .lightLevel(s -> 7)
                     .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
 
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
