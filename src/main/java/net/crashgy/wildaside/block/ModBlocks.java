@@ -39,13 +39,13 @@ public class ModBlocks {
 
     //SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
 
-//    public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
-//            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.VEGETABLE)
-//                    .strength(3f)
-//                    .explosionResistance(2f)
-//                    .sound(SoundType.STEM)
-//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
-//
+    public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.VEGETABLE)
+                    .strength(3f)
+                    .explosionResistance(2f)
+                    .sound(SoundType.STEM)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+
 //    public static final RegistryObject<Block> SUBSTILIUM_SHROOM = registerBlock("substilium_shroom",
 //            () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE)
 //                    .strength(0.3f)

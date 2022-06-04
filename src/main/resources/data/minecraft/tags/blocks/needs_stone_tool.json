@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "wildaside:testblock"
+    "wildaside:testblock",
+    "wildaside_substilium_stem"
   ]
 }
