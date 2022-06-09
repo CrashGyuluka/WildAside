@@ -5,6 +5,8 @@ import net.crashgy.wildaside.block.ModBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -41,6 +43,32 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage_side),
                         Helpers.BlockPathRef("", pathage_top));
                 sign(pathage, Helpers.BlockPathRef("", pathage_side));
+            }
+            else if(block.get() instanceof StairBlock) {
+                String pathage2 = Helpers.stairNamingModifier(block.get(), pathage);
+                stairs(pathage,
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2));
+                stairsInner(pathage + "_inner",
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2));
+                stairsOuter(pathage + "_outer",
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2));
+            }
+            else if(block.get() instanceof SlabBlock) {
+                String pathage2 = Helpers.slabNamingModifier(block.get(), pathage);
+                slab(pathage,
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2));
+                slabTop(pathage + "_top",
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2),
+                        Helpers.BlockPathRef("", pathage2));
             }
             else if(!(Helpers.manualJsons(block.get()))) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));

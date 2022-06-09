@@ -12,6 +12,37 @@ import java.util.ArrayList;
 public class Helpers {
 
     // --------------------------------------------
+    // NAME MODIFIERS
+    // --------------------------------------------
+    // STAIRS
+    // Basic system for stairs naming
+    // --------------------------------------------
+    public static String stairNamingModifier(Block block, String pathage) {
+        String pathage2 = pathage.replace("_stairs", "");
+        //if(block instanceof putClassHere) {  // for logs
+        //  doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
+        //}
+        return pathage2;
+    }
+    // --------------------------------------------
+    // SLABS
+    // Basic system for stairs naming
+    // --------------------------------------------
+    public static String slabNamingModifier(Block block, String pathage) {
+        String pathage2 = pathage.replace("_slab", "");
+        //if(block instanceof putClassHere) {  // for logs
+        //  doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
+        //}
+        return pathage2;
+    }
+    public static String slabDoubleVariant(Block block){
+        String doubleVariant = block.getRegistryName().getPath().replace("_slab", "");
+        //if(block instanceof putClassHere) {  // for logs
+        //  doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
+        //}
+        return doubleVariant;
+    }
+    // --------------------------------------------
     // LISTS
     // --------------------------------------------
     // Class used for blocks that will have manually handled blockstates and models
