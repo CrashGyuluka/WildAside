@@ -6,6 +6,11 @@
   "block.wildaside.logblock": "LogBlock",
   "block.wildaside.vibrion_block": "Vibrion Block",
   "block.wildaside.substilium_stem": "Substilium Stem",
+  "block.wildaside.substilium_planks": "Substilium Planks",
+  "block.wildaside.substilium_stairs": "Substilium Stairs",
+  "block.wildaside.substilium_slab": "Substilium Slab",
+  "block.wildaside.substilium_fence": "Substilium Fence",
+  "block.wildaside.substilium_fence_gate": "Substilium Fence Gate",
 
 
   "itemGroup.wildaside_tab": "WildAside"

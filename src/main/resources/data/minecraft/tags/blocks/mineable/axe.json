@@ -3,6 +3,11 @@
   "values": [
     "wildaside:testblock",
     "wildaside:substilium_stem",
-    "wildaside:substilium_shroom"
+    "wildaside:substilium_shroom",
+    "wildaside:substilium_planks",
+    "wildaside.substilium_stairs",
+    "wildaside.substilium_slab",
+    "wildaside.substilium_fence",
+    "wildaside.substilium_fence_gate"
   ]
 }
