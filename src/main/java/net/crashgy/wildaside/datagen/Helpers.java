@@ -2,6 +2,7 @@ package net.crashgy.wildaside.datagen;
 
 import net.crashgy.wildaside.WildAsideMod;
 import net.crashgy.wildaside.block.ModBlocks;
+import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.OreBlock;
@@ -19,9 +20,9 @@ public class Helpers {
     // --------------------------------------------
     public static String stairNamingModifier(Block block, String pathage) {
         String pathage2 = pathage.replace("_stairs", "");
-        //if(block instanceof putClassHere) {  // for logs
-        //  doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
-        //}
+        if(block instanceof FlammableBlocks.Stairs) {  // for logs
+            pathage2 = block.getRegistryName().getPath().replace("_slab", "_planks");
+        }
         return pathage2;
     }
     // --------------------------------------------
@@ -30,16 +31,16 @@ public class Helpers {
     // --------------------------------------------
     public static String slabNamingModifier(Block block, String pathage) {
         String pathage2 = pathage.replace("_slab", "");
-        //if(block instanceof putClassHere) {  // for logs
-        //  doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
-        //}
+        if(block instanceof FlammableBlocks.Slab) {  // for logs
+            pathage2 = block.getRegistryName().getPath().replace("_slab", "_planks");
+        }
         return pathage2;
     }
     public static String slabDoubleVariant(Block block){
         String doubleVariant = block.getRegistryName().getPath().replace("_slab", "");
-        //if(block instanceof putClassHere) {  // for logs
-        //  doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
-        //}
+        if(block instanceof FlammableBlocks.Slab) {  // for logs
+          doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
+        }
         return doubleVariant;
     }
     // --------------------------------------------
