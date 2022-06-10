@@ -1,6 +1,7 @@
 package net.crashgy.wildaside.block;
 
 import net.crashgy.wildaside.WildAsideMod;
+import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.crashgy.wildaside.item.ModCreativeModeTab;
 import net.crashgy.wildaside.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -55,7 +56,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_STAIRS = registerBlock("substilium_stairs",
-            () -> new StairBlock(() -> ModBlocks.SUBSTILIUM_PLANKS.get().defaultBlockState(),
+            () -> new FlammableBlocks.Stairs(() -> ModBlocks.SUBSTILIUM_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f)
                     .explosionResistance(1.5f)
@@ -63,7 +64,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_SLAB = registerBlock("substilium_slab",
-            () -> new SlabBlock(
+            () -> new FlammableBlocks.Slab(
                     BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f)
                     .explosionResistance(1.5f)
