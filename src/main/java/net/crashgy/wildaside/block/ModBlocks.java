@@ -36,7 +36,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
-    //SUBSTILIUM & VIRBION (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
+    //SUBSTILIUM BLOCKS
 
     public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
             () -> new RotatedPillarBlock(
@@ -70,21 +70,22 @@ public class ModBlocks {
                     .sound(SoundType.WOOD)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
-    public static final RegistryObject<Block> SUBSTILIUM_FENCE = registerBlock("substilium_fence",
-            () -> new FenceBlock(
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f)
-                    .explosionResistance(1.5f)
-                    .sound(SoundType.WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
-
-    public static final RegistryObject<Block> SUBSTILIUM_FENCE_GATE = registerBlock("substilium_fence_gate",
-            () -> new FenceGateBlock(
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f)
-                    .explosionResistance(1.5f)
-                    .sound(SoundType.WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+    //NO DATAGEN:
+//    public static final RegistryObject<Block> SUBSTILIUM_FENCE = registerBlock("substilium_fence",
+//            () -> new FenceBlock(
+//                    BlockBehaviour.Properties.of(Material.WOOD)
+//                    .strength(2f)
+//                    .explosionResistance(1.5f)
+//                    .sound(SoundType.WOOD)
+//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//
+//    public static final RegistryObject<Block> SUBSTILIUM_FENCE_GATE = registerBlock("substilium_fence_gate",
+//            () -> new FenceGateBlock(
+//                    BlockBehaviour.Properties.of(Material.WOOD)
+//                    .strength(2f)
+//                    .explosionResistance(1.5f)
+//                    .sound(SoundType.WOOD)
+//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
 //    public static final RegistryObject<Block> SUBSTILIUM_SHROOM = registerBlock("substilium_shroom",
@@ -101,6 +102,9 @@ public class ModBlocks {
 //                    .explosionResistance(1f)
 //                    .sound(SoundType.NYLIUM)
 //                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+
+
+    //VIRBION BLOCKS (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
 
     public static final RegistryObject<Block> VIBRION_BLOCK = registerBlock("vibrion_block",
             () -> new SlimeBlock(
