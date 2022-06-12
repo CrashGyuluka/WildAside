@@ -26,7 +26,7 @@ public class BlocksGen extends BlockModelProvider {
 
     public void iterator(Collection<RegistryObject<Block>> blocks) {
         for (RegistryObject<Block> block : blocks) {
-            String pathage = block.get().getRegistryName().getPath();
+            String pathage = block.get().getLootTable().getPath();
 
             // LOG-LIKE BLOCKS
             if(block.get() instanceof RotatedPillarBlock){

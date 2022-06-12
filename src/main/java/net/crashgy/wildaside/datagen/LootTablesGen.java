@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
@@ -67,7 +67,7 @@ public class LootTablesGen {
                 // ORE DROPS
                 //-------------------------------------------------
                 if (Helpers.modOres(block.get())) {
-                    String namingConvention = block.get().getRegistryName().getPath();
+                    String namingConvention = block.get().getLootTable().getPath();
                     Item itemProvided = block.get().asItem();
                     // -------------------------------------------------
                     // CUSTOM ORE DROPS
@@ -98,7 +98,7 @@ public class LootTablesGen {
 
         @Override
         protected @NotNull Iterable<Block> getKnownBlocks() {
-            return ForgeRegistries.BLOCKS.getValues().stream().filter(b -> Objects.requireNonNull(b.getRegistryName()).getNamespace().equals(WildAsideMod.MOD_ID)).collect(Collectors.toList());
+            return ForgeRegistries.BLOCKS.getValues().stream().filter(b -> Objects.requireNonNull(b.getLootTable()).getNamespace().equals(WildAsideMod.MOD_ID)).collect(Collectors.toList());
         }
     }
 }

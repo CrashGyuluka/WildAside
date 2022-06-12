@@ -28,7 +28,7 @@ public class BlockStatesGen extends BlockStateProvider {
 
     public void iterator(Collection<RegistryObject<Block>> blocks) {
         for (RegistryObject<Block> block : blocks) {
-            String pathage = block.get().getRegistryName().getPath();
+            String pathage = block.get().getLootTable().getPath();
 
             // LOG-LIKE
             if(block.get() instanceof RotatedPillarBlock) {
@@ -56,8 +56,8 @@ public class BlockStatesGen extends BlockStateProvider {
         // modelVariant should be default as "", as it directs us precisely to file named after block
         // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
         //----------------------------------------------------------------------------------------------------------------------
-        ResourceLocation locationWorkedOn = new ResourceLocation(WildAsideMod.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
-        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
+        ResourceLocation locationWorkedOn = new ResourceLocation(WildAsideMod.MOD_ID + ":block/" + resourceGiven.getLootTable().getPath() + modelVariant);
+        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getLootTable().getPath(), locationWorkedOn);
         return modelWorkedOn;
     }
     public ModelFile customModelProvider (Block resourceGiven, String modelVariant) {

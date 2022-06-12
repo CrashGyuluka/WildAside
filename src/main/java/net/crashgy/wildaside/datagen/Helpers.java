@@ -5,7 +5,7 @@ import net.crashgy.wildaside.block.ModBlocks;
 import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class Helpers {
     public static String stairNamingModifier(Block block, String pathage) {
         String pathage2 = pathage.replace("_stairs", "");
         if(block instanceof FlammableBlocks.Stairs) {  // for logs
-            pathage2 = block.getRegistryName().getPath().replace("_stairs", "_planks");
+            pathage2 = block.getLootTable().getPath().replace("_stairs", "_planks");
         }
         return pathage2;
     }
@@ -32,14 +32,14 @@ public class Helpers {
     public static String slabNamingModifier(Block block, String pathage) {
         String pathage2 = pathage.replace("_slab", "");
         if(block instanceof FlammableBlocks.Slab) {  // for logs
-            pathage2 = block.getRegistryName().getPath().replace("_slab", "_planks");
+            pathage2 = block.getLootTable().getPath().replace("_slab", "_planks");
         }
         return pathage2;
     }
     public static String slabDoubleVariant(Block block){
-        String doubleVariant = block.getRegistryName().getPath().replace("_slab", "");
+        String doubleVariant = block.getLootTable().getPath().replace("_slab", "");
         if(block instanceof FlammableBlocks.Slab) {  // for logs
-          doubleVariant = block.getRegistryName().getPath().replace("_slab", "_planks");
+          doubleVariant = block.getLootTable().getPath().replace("_slab", "_planks");
         }
         return doubleVariant;
     }
@@ -57,7 +57,7 @@ public class Helpers {
     public static Boolean modOres(Block block) {
         ArrayList<Block> ores_list = new ArrayList<>();
         for (RegistryObject<Block> block_iterated : ModBlocks.BLOCKS.getEntries()) {
-            if (block_iterated.get() instanceof OreBlock) {
+            if (block_iterated.get() instanceof DropExperienceBlock) {
                 ores_list.add(block_iterated.get());
             }
         }
