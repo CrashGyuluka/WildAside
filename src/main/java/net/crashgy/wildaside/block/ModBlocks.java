@@ -48,7 +48,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_PLANKS = registerBlock("substilium_planks",
-            () -> new Block(
+            () -> new FlammableBlocks.Planks(
                     BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f)
                     .explosionResistance(1.5f)

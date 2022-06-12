@@ -21,7 +21,7 @@ public class Helpers {
     public static String stairNamingModifier(Block block, String pathage) {
         String pathage2 = pathage.replace("_stairs", "");
         if(block instanceof FlammableBlocks.Stairs) {  // for logs
-            pathage2 = block.getRegistryName().getPath().replace("_slab", "_planks");
+            pathage2 = block.getRegistryName().getPath().replace("_stairs", "_planks");
         }
         return pathage2;
     }
