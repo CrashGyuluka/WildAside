@@ -11,6 +11,10 @@
   "block.wildaside.substilium_slab": "Substilium Slab",
   "block.wildaside.substilium_fence": "Substilium Fence",
   "block.wildaside.substilium_fence_gate": "Substilium Fence Gate",
+  "block.wildaside.substilium_door": "Substilium Door",
+  "block.wildaside.substilium_button": "Substilium Button",
+  "block.wildaside.substilium_pressure_plate": "Substilium Pressure Plate",
+  "block.wildaside.substilium_trapdoor": "Substilium Trapdoor",
 
 
   "itemGroup.wildaside_tab": "WildAside"

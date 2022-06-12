@@ -27,14 +27,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> TESTBLOCK = registerBlock("testblock",
             () -> new Block(
                     BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(4f)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> LOGBLOCK = registerBlock("logblock",
             () -> new RotatedPillarBlock(
                     BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(4f)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
     //SUBSTILIUM BLOCKS
@@ -42,67 +42,105 @@ public class ModBlocks {
     public static final RegistryObject<Block> SUBSTILIUM_STEM = registerBlock("substilium_stem",
             () -> new RotatedPillarBlock(
                     BlockBehaviour.Properties.of(Material.VEGETABLE)
-                    .strength(3f)
-                    .explosionResistance(2f)
-                    .sound(SoundType.STEM)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(3f)
+                            .explosionResistance(2f)
+                            .sound(SoundType.STEM)
+                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_PLANKS = registerBlock("substilium_planks",
             () -> new FlammableBlocks.Planks(
                     BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f)
-                    .explosionResistance(1.5f)
-                    .sound(SoundType.WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(2f)
+                            .explosionResistance(1.5f)
+                            .sound(SoundType.WOOD)
+                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_STAIRS = registerBlock("substilium_stairs",
             () -> new FlammableBlocks.Stairs(() -> ModBlocks.SUBSTILIUM_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f)
-                    .explosionResistance(1.5f)
-                    .sound(SoundType.WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(2f)
+                            .explosionResistance(1.5f)
+                            .sound(SoundType.WOOD)
+                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_SLAB = registerBlock("substilium_slab",
             () -> new FlammableBlocks.Slab(
                     BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f)
-                    .explosionResistance(1.5f)
-                    .sound(SoundType.WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(2f)
+                            .explosionResistance(1.5f)
+                            .sound(SoundType.WOOD)
+                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+
+    //BROKEN AF
+//    public static final RegistryObject<Block> SUBSTILIUM_DOOR = registerBlock("substilium_door",
+//            () -> new FlammableBlocks.Door(
+//                    BlockBehaviour.Properties.of(Material.WOOD)
+//                            .strength(2f)
+//                            .explosionResistance(1.5f)
+//                            .sound(SoundType.WOOD)
+//                            .requiresCorrectToolForDrops()
+//                            .noOcclusion()), ModCreativeModeTab.WILDASIDE_TAB);
+//
+//    public static final RegistryObject<Block> SUBSTILIUM_TRAPDOOR = registerBlock("substilium_trapdoor",
+//            () -> new FlammableBlocks.Trapdoor(
+//                    BlockBehaviour.Properties.of(Material.WOOD)
+//                            .strength(2f)
+//                            .explosionResistance(1.5f)
+//                            .sound(SoundType.WOOD)
+//                            .requiresCorrectToolForDrops()
+//                            .noOcclusion()), ModCreativeModeTab.WILDASIDE_TAB);
 
     //NO DATAGEN:
 //    public static final RegistryObject<Block> SUBSTILIUM_FENCE = registerBlock("substilium_fence",
 //            () -> new FenceBlock(
 //                    BlockBehaviour.Properties.of(Material.WOOD)
-//                    .strength(2f)
-//                    .explosionResistance(1.5f)
-//                    .sound(SoundType.WOOD)
-//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//                            .strength(2f)
+//                            .explosionResistance(1.5f)
+//                            .sound(SoundType.WOOD)
+//                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_FENCE_GATE = registerBlock("substilium_fence_gate",
 //            () -> new FenceGateBlock(
 //                    BlockBehaviour.Properties.of(Material.WOOD)
-//                    .strength(2f)
-//                    .explosionResistance(1.5f)
-//                    .sound(SoundType.WOOD)
-//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//                            .strength(2f)
+//                            .explosionResistance(1.5f)
+//                            .sound(SoundType.WOOD)
+//                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//
+//    public static final RegistryObject<Block> SUBSTILIUM_BUTTON = registerBlock("substilium_button",
+//            () -> new WoodButtonBlock(
+//                    BlockBehaviour.Properties.of(Material.WOOD)
+//                            .strength(2f)
+//                            .explosionResistance(1.5f)
+//                            .sound(SoundType.WOOD)
+//                            .requiresCorrectToolForDrops()
+//                            .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
+//
+//    public static final RegistryObject<Block> SUBSTILIUM_PRESSURE_PLATE = registerBlock("substilium_pressure_plate",
+//            () -> new PressurePlateBlock(
+//                    PressurePlateBlock.Sensitivity.EVERYTHING,
+//                    BlockBehaviour.Properties.of(Material.WOOD)
+//                            .strength(2f)
+//                            .explosionResistance(1.5f)
+//                            .sound(SoundType.WOOD)
+//                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
+    // NO TEXTURES AT ALL
 //    public static final RegistryObject<Block> SUBSTILIUM_SHROOM = registerBlock("substilium_shroom",
 //            () -> new Block(
 //                    BlockBehaviour.Properties.of(Material.VEGETABLE)
-//                    .strength(0.3f)
-//                    .explosionResistance(1f)
-//                    .sound(SoundType.WART_BLOCK)), ModCreativeModeTab.WILDASIDE_TAB);
+//                            .strength(0.3f)
+//                            .explosionResistance(1f)
+//                            .sound(SoundType.WART_BLOCK)), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_SOIL = registerBlock("substilium_soil",
 //            () -> new RotatedPillarBlock(
 //                    BlockBehaviour.Properties.of(Material.DIRT)
-//                    .strength(0.5f)
-//                    .explosionResistance(1f)
-//                    .sound(SoundType.NYLIUM)
-//                    .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//                            .strength(0.5f)
+//                            .explosionResistance(1f)
+//                            .sound(SoundType.NYLIUM)
+//                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
     //VIRBION BLOCKS (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
@@ -110,10 +148,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> VIBRION_BLOCK = registerBlock("vibrion_block",
             () -> new SlimeBlock(
                     BlockBehaviour.Properties.of(Material.VEGETABLE)
-                    .strength(2.2f)
-                    .explosionResistance(1f)
-                    .lightLevel(s -> 7)
-                    .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
+                            .strength(2.2f)
+                            .explosionResistance(1f)
+                            .lightLevel(s -> 7)
+                            .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
