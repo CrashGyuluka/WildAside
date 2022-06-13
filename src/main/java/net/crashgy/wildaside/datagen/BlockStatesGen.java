@@ -4,10 +4,7 @@ import net.crashgy.wildaside.WildAsideMod;
 import net.crashgy.wildaside.block.ModBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -40,6 +37,12 @@ public class BlockStatesGen extends BlockStateProvider {
             else if(block.get() instanceof SlabBlock) {
                 String doubleVariant = Helpers.slabDoubleVariant(block.get());
                 slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
+            }
+            else if(block.get() instanceof TrapDoorBlock) {
+                trapdoorBlock((TrapDoorBlock) block.get(), modelProvider(block.get(), "_bottom"), modelProvider(block.get(), "_top"), modelProvider(block.get(), "_open"), true);
+            }
+            else if(block.get() instanceof DoorBlock) {
+                doorBlock((DoorBlock) block.get(), modelProvider(block.get(), "_bottom"), modelProvider(block.get(), "_bottom_hinge"), modelProvider(block.get(), "_top"), modelProvider(block.get(), "_top_hinge"));
             }
             else if(!(Helpers.manualJsons(block.get()))) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));

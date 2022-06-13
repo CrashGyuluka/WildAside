@@ -46,7 +46,7 @@ public class WildAsideMod
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SUBSTILIUM_DOOR.get(), RenderType.cutout());        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SUBSTILIUM_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SUBSTILIUM_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SUBSTILIUM_TRAPDOOR.get(), RenderType.cutout());
     }
 

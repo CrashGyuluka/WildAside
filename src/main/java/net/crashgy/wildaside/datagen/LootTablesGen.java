@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
@@ -79,7 +80,14 @@ public class LootTablesGen {
                     }
                     //-------------------------------------------------
                     oresGen(block.get(), itemProvided);
-                } else {
+                }
+                //-------------------------------------------------
+                // DOORS
+                //-------------------------------------------------
+                else if (block.get() instanceof DoorBlock) {
+                    add(block.get(), BlockLootTables::createDoorTable);
+                }
+                else {
                 //-------------------------------------------------
                 // REGULAR BLOCKS (DROP ITSELF)
                 //-------------------------------------------------
