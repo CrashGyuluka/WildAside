@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "wildaside:block/substilium_stem_side",
+    "end": "wildaside:block/substilium_stem_top",
+    "particle": "wildaside:block/substilium_stem_side"
+  }
+}

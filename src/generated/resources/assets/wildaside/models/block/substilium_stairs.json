@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "wildaside:block/substilium_planks",
+    "bottom": "wildaside:block/substilium_planks",
+    "top": "wildaside:block/substilium_planks"
+  }
+}

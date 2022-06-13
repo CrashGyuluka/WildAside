@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "wildaside:block/substilium_slab"
+    },
+    "type=bottom": {
+      "model": "wildaside:block/substilium_slab"
+    },
+    "type=double": {
+      "model": "wildaside:block/substilium_planks"
+    }
+  }
+}
