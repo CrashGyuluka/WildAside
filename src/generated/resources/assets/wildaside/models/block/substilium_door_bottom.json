@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "bottom": "wildaside:block/substilium_door_bottom",
+    "top": "wildaside:block/substilium_door_top"
+  }
+}

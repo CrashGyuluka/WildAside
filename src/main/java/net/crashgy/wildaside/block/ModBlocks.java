@@ -72,23 +72,23 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     //BROKEN AF
-//    public static final RegistryObject<Block> SUBSTILIUM_DOOR = registerBlock("substilium_door",
-//            () -> new FlammableBlocks.Door(
-//                    BlockBehaviour.Properties.of(Material.WOOD)
-//                            .strength(2f)
-//                            .explosionResistance(1.5f)
-//                            .sound(SoundType.WOOD)
-//                            .requiresCorrectToolForDrops()
-//                            .noOcclusion()), ModCreativeModeTab.WILDASIDE_TAB);
-//
-//    public static final RegistryObject<Block> SUBSTILIUM_TRAPDOOR = registerBlock("substilium_trapdoor",
-//            () -> new FlammableBlocks.Trapdoor(
-//                    BlockBehaviour.Properties.of(Material.WOOD)
-//                            .strength(2f)
-//                            .explosionResistance(1.5f)
-//                            .sound(SoundType.WOOD)
-//                            .requiresCorrectToolForDrops()
-//                            .noOcclusion()), ModCreativeModeTab.WILDASIDE_TAB);
+    public static final RegistryObject<Block> SUBSTILIUM_DOOR = registerBlock("substilium_door",
+            () -> new FlammableBlocks.Door(
+                    BlockBehaviour.Properties.of(Material.WOOD)
+                            .strength(2f)
+                            .explosionResistance(1.5f)
+                            .sound(SoundType.WOOD)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()), ModCreativeModeTab.WILDASIDE_TAB);
+
+    public static final RegistryObject<Block> SUBSTILIUM_TRAPDOOR = registerBlock("substilium_trapdoor",
+            () -> new FlammableBlocks.Trapdoor(
+                    BlockBehaviour.Properties.of(Material.WOOD)
+                            .strength(2f)
+                            .explosionResistance(1.5f)
+                            .sound(SoundType.WOOD)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()), ModCreativeModeTab.WILDASIDE_TAB);
 
     //NO DATAGEN:
 //    public static final RegistryObject<Block> SUBSTILIUM_FENCE = registerBlock("substilium_fence",
