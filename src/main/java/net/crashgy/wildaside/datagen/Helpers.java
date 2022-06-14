@@ -51,7 +51,8 @@ public class Helpers {
         ArrayList<Block> manual_jsons_list = new ArrayList<>();
         //manual_jsons_list.add(ModBlocks.SUBSTILIUM_STEM.get());
         //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SHROOM.get());
-        //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SOIL.get());
+//      //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SOIL.get());
+        manual_jsons_list.add(ModBlocks.VIBRION_GROWTH.get());
         return (manual_jsons_list.contains(block));
     }
     public static Boolean modOres(Block block) {

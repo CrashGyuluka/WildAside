@@ -48,6 +48,7 @@ public class WildAsideMod
     {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SUBSTILIUM_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SUBSTILIUM_TRAPDOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.VIBRION_GROWTH.get(), RenderType.cutout());
     }
 
     private void setup(final FMLCommonSetupEvent event)

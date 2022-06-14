@@ -89,6 +89,10 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_bottom"),
                         Helpers.BlockPathRef("", pathage + "_top"));
             }
+            else if(block.get() instanceof SaplingBlock) {
+                cross(pathage,
+                        Helpers.BlockPathRef("", pathage));
+            }
             else if(!(Helpers.manualJsons(block.get()))) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
                 sign(pathage, Helpers.BlockPathRef("", pathage));
