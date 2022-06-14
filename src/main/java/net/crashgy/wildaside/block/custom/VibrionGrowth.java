@@ -32,7 +32,7 @@ public class VibrionGrowth extends Block {
         Vec3 offset = pState.getOffset(pLevel, pPos);
         return Block.box(0, 0, 0, 10, 9, 10);
     }
-
+s
     @Override
     public OffsetType getOffsetType() {
         return OffsetType.XZ;

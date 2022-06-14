@@ -163,7 +163,8 @@ public class ModBlocks {
                             .explosionResistance(1f)
                             .lightLevel(s -> 5)
                             .sound(SoundType.SHROOMLIGHT)
-                            .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .noCollission()
+                            .emissiveRendering(what is this bullshit?)), ModCreativeModeTab.WILDASIDE_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
