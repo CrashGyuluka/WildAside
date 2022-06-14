@@ -50,14 +50,9 @@ public class VibrionGrowth extends Block {
 
     @Override
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
-        boolean canSurvive = pLevel.getBlockState(new BlockPos(pPos.getX(), pPos.getY() - 1, pPos.getZ())).canOcclude();
-        return canSurvive;
+        return pLevel.getBlockState(new BlockPos(pPos.getX(), pPos.getY() - 1, pPos.getZ())).canOcclude();
     }
 
-    @Override
-    public void onNeighborChange(BlockState state, LevelReader level, BlockPos pos, BlockPos neighbor) {
-        super.onNeighborChange(state, level, pos, neighbor);
-    }
 
     @Override
     public boolean canBeReplaced(BlockState pState, BlockPlaceContext pUseContext) {
