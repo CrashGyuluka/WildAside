@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "wildaside:block/hanging_vibrion_vines_plant"
+  }
+}

@@ -6,6 +6,7 @@ import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.OreBlock;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.ArrayList;
@@ -53,6 +54,8 @@ public class Helpers {
         //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SHROOM.get());
 //      //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SOIL.get());
         manual_jsons_list.add(ModBlocks.VIBRION_GROWTH.get());
+        manual_jsons_list.add(ModBlocks.HANGING_VIBRION_VINES.get());
+        manual_jsons_list.add(ModBlocks.HANGING_VIBRION_VINES_PLANT.get());
         return (manual_jsons_list.contains(block));
     }
     public static Boolean modOres(Block block) {
