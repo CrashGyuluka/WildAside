@@ -1,0 +1,24 @@
+{
+  "item.wildaside.testitem": "Teszt Tárgy",
+  "item.wildaside.testitem2": "Teszt Tárgy2",
+
+  "block.wildaside.testblock": "Teszt Blokk",
+  "block.wildaside.logblock": "RönkBlokk",
+
+  "block.wildaside.vibrion_block": "Vibrion Blokk",
+  "block.wildaside.substilium_stem": "Szubsztílium Rönk",
+  "block.wildaside.substilium_planks": "Szubsztílium Deszka",
+  "block.wildaside.substilium_stairs": "Szubsztílium Lépcső",
+  "block.wildaside.substilium_slab": "Szubsztílium Slab",
+  "block.wildaside.substilium_fence": "Szubsztílium Kerítés",
+  "block.wildaside.substilium_fence_gate": "Szubsztílium Kerítéskapu",
+  "block.wildaside.substilium_door": "Szubsztílium Ajtó",
+  "block.wildaside.substilium_button": "Szubsztílium Gomb",
+  "block.wildaside.substilium_pressure_plate": "Szubsztílium Nyomólap",
+  "block.wildaside.substilium_trapdoor": "Szubsztílium Csapóajtó",
+  "block.wildaside.vibrion_growth": "Vibrion Növés",
+
+
+  "itemGroup.wildaside_tab": "WildAside"
+
+}

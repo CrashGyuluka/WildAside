@@ -7,6 +7,11 @@
     "wildaside.substilium_stairs",
     "wildaside.substilium_slab",
     "wildaside.substilium_fence",
-    "wildaside.substilium_fence_gate"
+    "wildaside.substilium_fence_gate",
+    "wildaside.substilium_door",
+    "wildaside.substilium_button",
+    "wildaside.substilium_pressure_plate",
+    "wildaside.substilium_trapdoor",
+    "wildaside.vibrion_growth"
   ]
 }

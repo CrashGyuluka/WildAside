@@ -18,20 +18,18 @@ import org.lwjgl.system.CallbackI;
 import java.awt.*;
 import java.util.stream.Stream;
 
-// Change 1: Extended to BushBlock instead of just Block.
-public class VibrionGrowth extends BushBlock {
+
+public class VibrionGrowth extends BushBlock{
     public VibrionGrowth(Properties properties) {
         super(properties);
     }
 
-    // Change 2: uncommented the SHAPE variable.
+
     private static final VoxelShape SHAPE = Block.box(0, 0, 0, 14, 10, 14);
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Vec3 offset = pState.getOffset(pLevel, pPos);
-
-        // Change 3: used the SHAPE variable and offsetted it with the "offset" variable above.
         return SHAPE.move(offset.x, offset.y, offset.z);
     }
 

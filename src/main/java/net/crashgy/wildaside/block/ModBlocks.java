@@ -41,12 +41,15 @@ public class ModBlocks {
                             .of(Material.VEGETABLE)
                             .strength(3f)
                             .explosionResistance(2f)
-                            .sound(SoundType.STEM)
-                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .sound(SoundType.STEM)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_PLANKS = registerBlock("substilium_planks",
             () -> new FlammableBlocks.Planks(
-                    BlockBehaviour.Properties.of(Material.WOOD).strength(2f).explosionResistance(1.5f).sound(SoundType.WOOD).requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                    BlockBehaviour.Properties
+                            .of(Material.WOOD)
+                            .strength(2f)
+                            .explosionResistance(1.5f)
+                            .sound(SoundType.WOOD)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_STAIRS = registerBlock("substilium_stairs",
             () -> new FlammableBlocks.Stairs(() -> ModBlocks.SUBSTILIUM_PLANKS.get().defaultBlockState(),
@@ -54,8 +57,7 @@ public class ModBlocks {
                             .of(Material.WOOD)
                             .strength(2f)
                             .explosionResistance(1.5f)
-                            .sound(SoundType.WOOD)
-                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .sound(SoundType.WOOD)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_SLAB = registerBlock("substilium_slab",
             () -> new FlammableBlocks.Slab(
@@ -63,8 +65,7 @@ public class ModBlocks {
                             .of(Material.WOOD)
                             .strength(2f)
                             .explosionResistance(1.5f)
-                            .sound(SoundType.WOOD)
-                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .sound(SoundType.WOOD)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SUBSTILIUM_DOOR = registerBlock("substilium_door",
             () -> new FlammableBlocks.Door(
@@ -93,8 +94,7 @@ public class ModBlocks {
 //                            .of(Material.WOOD)
 //                            .strength(2f)
 //                            .explosionResistance(1.5f)
-//                            .sound(SoundType.WOOD)
-//                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//                            .sound(SoundType.WOOD)), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_FENCE_GATE = registerBlock("substilium_fence_gate",
 //            () -> new FenceGateBlock(
@@ -102,8 +102,7 @@ public class ModBlocks {
 //                            .of(Material.WOOD)
 //                            .strength(2f)
 //                            .explosionResistance(1.5f)
-//                            .sound(SoundType.WOOD)
-//                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
+//                            .sound(SoundType.WOOD)), ModCreativeModeTab.WILDASIDE_TAB);
 //
 //    public static final RegistryObject<Block> SUBSTILIUM_BUTTON = registerBlock("substilium_button",
 //            () -> new WoodButtonBlock(
@@ -156,16 +155,16 @@ public class ModBlocks {
                             .lightLevel(s -> 7)
                             .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
 
-    // Change 1: changed material to Material.REPLACEABLE_PLANT
-    // Change 2: deleted emissive rendering entry (:why:)
     public static final RegistryObject<Block> VIBRION_GROWTH = registerBlock("vibrion_growth",
             () -> new VibrionGrowth(BlockBehaviour.Properties
                             .of(Material.REPLACEABLE_PLANT)
-                            .strength(2.2f)
-                            .explosionResistance(1f)
+                            .strength(0.5f)
+                            .explosionResistance(0.1f)
                             .lightLevel(s -> 5)
                             .sound(SoundType.SHROOMLIGHT)
                             .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)

@@ -4,6 +4,7 @@
 
   "block.wildaside.testblock": "TestBlock",
   "block.wildaside.logblock": "LogBlock",
+
   "block.wildaside.vibrion_block": "Vibrion Block",
   "block.wildaside.substilium_stem": "Substilium Stem",
   "block.wildaside.substilium_planks": "Substilium Planks",
@@ -15,6 +16,7 @@
   "block.wildaside.substilium_button": "Substilium Button",
   "block.wildaside.substilium_pressure_plate": "Substilium Pressure Plate",
   "block.wildaside.substilium_trapdoor": "Substilium Trapdoor",
+  "block.wildaside.vibrion_growth": "Vibrion Growth",
 
 
   "itemGroup.wildaside_tab": "WildAside"
