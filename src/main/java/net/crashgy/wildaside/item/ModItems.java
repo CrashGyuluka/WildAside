@@ -16,7 +16,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.WILDASIDE_TAB)));
 
     public static final RegistryObject<Item> TESTITEM2 = ITEMS.register("testitem2",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.WILDASIDE_TAB)));
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.WILDASIDE_TAB)));
+
+//    public static final RegistryObject<Item> SPORE = ITEMS.register("spore",
+//            () -> new Item(new Item.Properties()
+//                    .fireResistant()
+//                    .stacksTo(16)
+//                    .tab(ModCreativeModeTab.WILDASIDE_TAB)));
 
     public static void register(IEventBus eventBus)
     {

@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
+import org.apache.commons.codec.digest.Md5Crypt;
 
 import java.util.ArrayList;
 
@@ -56,6 +57,7 @@ public class Helpers {
         manual_jsons_list.add(ModBlocks.VIBRION_GROWTH.get());
         manual_jsons_list.add(ModBlocks.HANGING_VIBRION_VINES.get());
         manual_jsons_list.add(ModBlocks.HANGING_VIBRION_VINES_PLANT.get());
+        manual_jsons_list.add(ModBlocks.SPORE_GROWER.get());
         return (manual_jsons_list.contains(block));
     }
     public static Boolean modOres(Block block) {

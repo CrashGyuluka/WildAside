@@ -3,10 +3,12 @@ package net.crashgy.wildaside.block;
 import net.crashgy.wildaside.WildAsideMod;
 import net.crashgy.wildaside.block.custom.HangingVibrionVines;
 import net.crashgy.wildaside.block.custom.HangingVibrionVinesPlant;
+import net.crashgy.wildaside.block.custom.SporeGrower;
 import net.crashgy.wildaside.block.custom.VibrionGrowth;
 import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.crashgy.wildaside.item.ModCreativeModeTab;
 import net.crashgy.wildaside.item.ModItems;
+import net.crashgy.wildaside.world.feature.tree.SubstiliumTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -181,6 +183,17 @@ public class ModBlocks {
                             .strength(0.2f)
                             .explosionResistance(0f)
                             .lightLevel(s -> 1)
+                            .sound(SoundType.SHROOMLIGHT)
+                            .noOcclusion()
+                            .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);
+
+    public static final RegistryObject<Block> SPORE_GROWER = registerBlock("spore_grower",
+            () -> new SporeGrower(
+                    new SubstiliumTreeGrower(),
+                    BlockBehaviour.Properties
+                            .of(Material.PLANT)
+                            .strength(1f)
+                            .explosionResistance(0f)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
                             .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);

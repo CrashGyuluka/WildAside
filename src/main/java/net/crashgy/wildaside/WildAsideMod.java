@@ -51,6 +51,7 @@ public class WildAsideMod
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VIBRION_GROWTH.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.HANGING_VIBRION_VINES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.HANGING_VIBRION_VINES_PLANT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPORE_GROWER.get(), RenderType.cutout());
     }
 
     private void setup(final FMLCommonSetupEvent event)
