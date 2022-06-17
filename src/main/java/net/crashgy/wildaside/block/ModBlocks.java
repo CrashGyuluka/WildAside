@@ -6,6 +6,7 @@ import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.crashgy.wildaside.item.ModCreativeModeTab;
 import net.crashgy.wildaside.item.ModItems;
 import net.crashgy.wildaside.world.feature.tree.SubstiliumTreeGrower;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -16,6 +17,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.lwjgl.system.CallbackI;
 
 import java.util.function.Supplier;
 
@@ -140,14 +142,14 @@ public class ModBlocks {
                             .strength(2.3f)
                             .explosionResistance(1f)
                             .lightLevel(s -> 4)
-                            .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
+                            .sound(SoundType.SHROOMLIGHT), UniformInt.of(2,5)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> VIBRION_GROWTH = registerBlock("vibrion_growth",
             () -> new VibrionGrowth(BlockBehaviour.Properties
                             .of(Material.REPLACEABLE_PLANT)
                             .strength(0.5f)
                             .explosionResistance(0.1f)
-                            .lightLevel(s -> 1)
+                            .lightLevel(s -> 3)
                             .sound(SoundType.SHROOMLIGHT)
                             .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
 

@@ -15,6 +15,18 @@
   "block.wildaside.hanging_vibrion_vines_plant": "Hanging Vibrion Vines Plant",
   "block.wildaside.vibrion_sporeholder": "Vibrion Sporeholder",
 
+  "item.wildaside.vibrion": "Vibrion",
+
+  "effect.wildaside.contaminated": "Contaminated",
+
+  "item.minecraft.potion.effect.contaminated_potion": "Contaminated Potion",
+  "item.minecraft.splash_potion.effect.contaminated_potion": "Splash Potion of Contaminated",
+  "item.minecraft.lingering_potion.effect.contaminated_potion": "Lingering Potion of Contaminated",
+
+  "adv.wildaside.1": "Wild, Wilder, Wildest",
+  "adv.wildaside.1desc": "Open the world with WildAside for the first time",
+  "adv.wildaside.2": "Vibing for Vibrion",
+  "adv.wildaside.2desc": "Have a Vibrion in your inventory",
 
   "itemGroup.wildaside_tab": "WildAside"
 

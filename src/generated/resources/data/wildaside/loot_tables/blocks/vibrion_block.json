@@ -39,7 +39,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "wildaside:vibrion_block"
+              "name": "wildaside:vibrion"
             }
           ]
         }

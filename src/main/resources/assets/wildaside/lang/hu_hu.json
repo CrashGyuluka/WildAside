@@ -15,6 +15,18 @@
   "block.wildaside.hanging_vibrion_vines_plant": "Lógó Vibrion Inda Ültetvény",
   "block.wildaside.vibrion_sporeholder": "Vibrion Spóratároló",
 
+  "item.wildaside.vibrion": "Vibrion",
+
+  "effect.wildaside.contaminated": "Fertőzöttség",
+
+  "item.minecraft.potion.effect.contaminated_potion": "Fertőzöttség Bájitala",
+  "item.minecraft.splash_potion.effect.contaminated_potion": "Splash Potion of Contaminated",
+  "item.minecraft.lingering_potion.effect.contaminated_potion": "Lingering Potion of Contaminated",
+
+  "adv.wildaside.1": "Vad, Vadabb, Legvadabb",
+  "adv.wildaside.1desc": "Nyisd meg világodat a WildAside-dal első alkalommal",
+  "adv.wildaside.2": "Érdekes Vibrion",
+  "adv.wildaside.2desc": "Legyen nálad egy Vibrion",
 
   "itemGroup.wildaside_tab": "WildAside"
 

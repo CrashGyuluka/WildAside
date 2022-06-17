@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "wildaside:vibrion"
+    },
+    "title": {
+      "translate": "adv.wildaside.2"
+    },
+    "description": {
+      "translate": "adv.wildaside.2desc",
+      "bold": false,
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "wildaside:wild_wilder_wildest",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wildaside:vibrion"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "wildaside:vibrion_block"
+    ],
+    "experience": 3
+  }
+}

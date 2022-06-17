@@ -67,7 +67,7 @@ public class Helpers {
                 ores_list.add(block_iterated.get());
             }
         }
-        ores_list.add(ModBlocks.VIBRION_BLOCK.get());
+//        ores_list.add(ModBlocks.VIBRION_BLOCK.get());
         return (ores_list.contains(block));
     }
 
