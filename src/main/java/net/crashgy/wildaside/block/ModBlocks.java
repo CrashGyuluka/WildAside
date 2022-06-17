@@ -1,10 +1,7 @@
 package net.crashgy.wildaside.block;
 
 import net.crashgy.wildaside.WildAsideMod;
-import net.crashgy.wildaside.block.custom.HangingVibrionVines;
-import net.crashgy.wildaside.block.custom.HangingVibrionVinesPlant;
-import net.crashgy.wildaside.block.custom.SporeGrower;
-import net.crashgy.wildaside.block.custom.VibrionGrowth;
+import net.crashgy.wildaside.block.custom.*;
 import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
 import net.crashgy.wildaside.item.ModCreativeModeTab;
 import net.crashgy.wildaside.item.ModItems;
@@ -25,14 +22,6 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, WildAsideMod.MOD_ID);
-
-
-    //TEST BLOCKS!
-    public static final RegistryObject<Block> TESTBLOCK = registerBlock("testblock",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
-
-    public static final RegistryObject<Block> LOGBLOCK = registerBlock("logblock",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
 
     //SUBSTILIUM BLOCKS
@@ -144,16 +133,13 @@ public class ModBlocks {
 //                            .sound(SoundType.NYLIUM)
 //                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
-
-    //VIRBION BLOCKS (Vibrion Vines, Vibrion Growths and Sporeholders are not implemented yet)
-
     public static final RegistryObject<Block> VIBRION_BLOCK = registerBlock("vibrion_block",
-            () -> new SlimeBlock(
+            () -> new OreBlock(
                     BlockBehaviour.Properties
                             .of(Material.VEGETABLE)
-                            .strength(2.2f)
+                            .strength(2.3f)
                             .explosionResistance(1f)
-                            .lightLevel(s -> 6)
+                            .lightLevel(s -> 4)
                             .sound(SoundType.SHROOMLIGHT)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> VIBRION_GROWTH = registerBlock("vibrion_growth",
@@ -161,7 +147,7 @@ public class ModBlocks {
                             .of(Material.REPLACEABLE_PLANT)
                             .strength(0.5f)
                             .explosionResistance(0.1f)
-                            .lightLevel(s -> 4)
+                            .lightLevel(s -> 1)
                             .sound(SoundType.SHROOMLIGHT)
                             .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
 
@@ -171,31 +157,45 @@ public class ModBlocks {
                             .of(Material.REPLACEABLE_PLANT)
                             .strength(0.2f)
                             .explosionResistance(0f)
-                            .lightLevel(s -> 3)
+                            .lightLevel(s -> 1)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
+                            .noCollission()
                             .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> HANGING_VIBRION_VINES_PLANT = registerBlock("hanging_vibrion_vines_plant",
             () -> new HangingVibrionVinesPlant(
                     BlockBehaviour.Properties
                             .of(Material.REPLACEABLE_PLANT)
-                            .strength(0.2f)
-                            .explosionResistance(0f)
+                            .strength(0.3f)
+                            .explosionResistance(0.5f)
                             .lightLevel(s -> 1)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
-                            .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);
+                            .noCollission()
+                            .dynamicShape()), CreativeModeTab.TAB_SEARCH);
+
+    public static final RegistryObject<Block> VIBRION_SPOREHOLDER = registerBlock("vibrion_sporeholder",
+            () -> new VibrionSporeholder(
+                    BlockBehaviour.Properties
+                            .of(Material.PLANT)
+                            .strength(2f)
+                            .explosionResistance(4f)
+                            .lightLevel(s -> 5)
+                            .sound(SoundType.SHROOMLIGHT)
+                            .noOcclusion()
+                            .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> SPORE_GROWER = registerBlock("spore_grower",
             () -> new SporeGrower(
                     new SubstiliumTreeGrower(),
                     BlockBehaviour.Properties
                             .of(Material.PLANT)
-                            .strength(1f)
+                            .strength(0f)
                             .explosionResistance(0f)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
+                            .noCollission()
                             .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)

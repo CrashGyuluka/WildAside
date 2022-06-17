@@ -1,10 +1,4 @@
 {
-  "item.wildaside.testitem": "Teszt Tárgy",
-  "item.wildaside.testitem2": "Teszt Tárgy2",
-
-  "block.wildaside.testblock": "Teszt Blokk",
-  "block.wildaside.logblock": "RönkBlokk",
-
   "block.wildaside.vibrion_block": "Vibrion Blokk",
   "block.wildaside.substilium_stem": "Szubsztílium Rönk",
   "block.wildaside.substilium_planks": "Szubsztílium Deszka",
@@ -19,6 +13,7 @@
   "block.wildaside.vibrion_growth": "Vibrion Növés",
   "block.wildaside.hanging_vibrion_vines": "Lógó Vibrion Inda",
   "block.wildaside.hanging_vibrion_vines_plant": "Lógó Vibrion Inda Ültetvény",
+  "block.wildaside.vibrion_sporeholder": "Vibrion Spóratároló",
 
 
   "itemGroup.wildaside_tab": "WildAside"

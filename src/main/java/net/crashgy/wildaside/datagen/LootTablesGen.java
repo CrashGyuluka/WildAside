@@ -10,10 +10,8 @@ import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
@@ -76,7 +74,11 @@ public class LootTablesGen {
                     // silk-touched anyway (like pre-1.17 iron ore)
                     // -------------------------------------------------
                     if (namingConvention.contains("testblock")) {
-                        itemProvided = ModItems.TESTITEM.get();
+                        itemProvided = ModItems.VIBRION.get();
+                    if (namingConvention.contains("vibrion_block"))  {
+                        itemProvided = ModItems.VIBRION.get();
+                    }
+
                     }
                     //-------------------------------------------------
                     oresGen(block.get(), itemProvided);

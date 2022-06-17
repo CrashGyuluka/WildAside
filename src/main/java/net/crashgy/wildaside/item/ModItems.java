@@ -12,12 +12,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, WildAsideMod.MOD_ID);
 
-    public static final RegistryObject<Item> TESTITEM = ITEMS.register("testitem",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.WILDASIDE_TAB)));
-
-    public static final RegistryObject<Item> TESTITEM2 = ITEMS.register("testitem2",
+    public static final RegistryObject<Item> VIBRION = ITEMS.register("vibrion",
             () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.WILDASIDE_TAB)));
+                    .stacksTo(64)
+                    .fireResistant()
+                    .tab(ModCreativeModeTab.WILDASIDE_TAB).food(ModFoods.VIBRION)));
 
 //    public static final RegistryObject<Item> SPORE = ITEMS.register("spore",
 //            () -> new Item(new Item.Properties()
