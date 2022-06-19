@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wildaside:block/entorium_ore",
+    "particle": "wildaside:block/entorium_ore"
+  }
+}

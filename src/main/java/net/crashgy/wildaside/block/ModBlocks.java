@@ -141,7 +141,7 @@ public class ModBlocks {
                             .of(Material.VEGETABLE)
                             .strength(2.3f)
                             .explosionResistance(1f)
-                            .lightLevel(s -> 4)
+                            .lightLevel(s -> 5)
                             .sound(SoundType.SHROOMLIGHT), UniformInt.of(2,5)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> VIBRION_GROWTH = registerBlock("vibrion_growth",
@@ -159,7 +159,7 @@ public class ModBlocks {
                             .of(Material.REPLACEABLE_PLANT)
                             .strength(0.2f)
                             .explosionResistance(0f)
-                            .lightLevel(s -> 1)
+                            .lightLevel(s -> 4)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
                             .noCollission()
@@ -171,7 +171,7 @@ public class ModBlocks {
                             .of(Material.REPLACEABLE_PLANT)
                             .strength(0.3f)
                             .explosionResistance(0.5f)
-                            .lightLevel(s -> 1)
+                            .lightLevel(s -> 4)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
                             .noCollission()
@@ -183,7 +183,7 @@ public class ModBlocks {
                             .of(Material.PLANT)
                             .strength(2f)
                             .explosionResistance(4f)
-                            .lightLevel(s -> 5)
+                            .lightLevel(s -> 4)
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
                             .noCollission()), ModCreativeModeTab.WILDASIDE_TAB);
@@ -199,6 +199,17 @@ public class ModBlocks {
                             .noOcclusion()
                             .noCollission()
                             .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);
+
+    //ENTROIUM BLOCKS
+
+    public static final RegistryObject<Block> ENTORIUM_ORE = registerBlock("entorium_ore",
+            () -> new OreBlock(
+                    BlockBehaviour.Properties
+                            .of(Material.STONE)
+                            .strength(4f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE), UniformInt.of(0,5)), ModCreativeModeTab.WILDASIDE_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {

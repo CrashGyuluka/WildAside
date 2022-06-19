@@ -14,6 +14,7 @@
   "block.wildaside.hanging_vibrion_vines": "Hanging Vibrion Vines",
   "block.wildaside.hanging_vibrion_vines_plant": "Hanging Vibrion Vines Plant",
   "block.wildaside.vibrion_sporeholder": "Vibrion Sporeholder",
+  "block.wildaside.entorium_ore": "Entorium Ore",
 
   "item.wildaside.vibrion": "Vibrion",
 
@@ -25,7 +26,7 @@
 
   "adv.wildaside.1": "Wild, Wilder, Wildest",
   "adv.wildaside.1desc": "Open the world with WildAside for the first time",
-  "adv.wildaside.2": "Vibing for Vibrion",
+  "adv.wildaside.2": "Fatal DNA Error",
   "adv.wildaside.2desc": "Have a Vibrion in your inventory",
 
   "itemGroup.wildaside_tab": "WildAside"
