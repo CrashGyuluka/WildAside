@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "wildaside:vibrion_block",
+    "wildaside.vibrion_growth",
+    "wildaside:hanging_vibrion_vines",
+    "wildaside:hanging_vibrion_vines_plant",
+    "wildaside:vibrion_sporeholder"
+  ]
+}

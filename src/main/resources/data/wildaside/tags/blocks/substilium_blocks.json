@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "wildaside:substilium_stem",
+    "wildaside:substilium_planks",
+    "wildaside.substilium_stairs",
+    "wildaside.substilium_slab",
+    "wildaside.substilium_fence",
+    "wildaside.substilium_fence_gate",
+    "wildaside.substilium_door",
+    "wildaside.substilium_button",
+    "wildaside.substilium_pressure_plate",
+    "wildaside.substilium_trapdoor"
+  ]
+}

@@ -29,7 +29,7 @@ displayName="Wild Aside" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="placeholder_icon_1.png" #optional
 # A text field displayed in the mod UI
-credits="CrashGyuluka, Lyof, Toma400, Dylanvhs" #optional
+credits="CrashGyuluka, Lyof, Toma400, Dylanvhs, Aqu" #optional
 # A text field displayed in the mod UI
 authors="CrashGyuluka, Lyof" #optional
 # The description text for the mod (multi line!) (#mandatory)
