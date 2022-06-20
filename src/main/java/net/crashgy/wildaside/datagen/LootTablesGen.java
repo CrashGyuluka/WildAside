@@ -11,12 +11,15 @@ import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,6 +34,8 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+
+import static net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer.simpleBuilder;
 
 public class LootTablesGen {
 
@@ -71,6 +76,8 @@ public class LootTablesGen {
                 if (Helpers.modOres(block.get())) {
                     String namingConvention = block.get().getRegistryName().getPath();
                     Item itemProvided = block.get().asItem();
+                    Integer chances = 100; // <- base chance for drop (set
+                    // to lower if you don't want guaranteed drop)
                     Integer amount = 1; // <- change this within "if" part
                     // if you want to have bigger drops of items than 1
                     // ---------------------------------------------------
@@ -86,7 +93,7 @@ public class LootTablesGen {
                         amount = 2;
                     }
                     //---------------------------------------------------
-                    oresGen(block.get(), itemProvided, amount);
+                    oresGen(block.get(), itemProvided, amount, chances);
                 }
                 //-------------------------------------------------
                 // DOORS
@@ -107,12 +114,15 @@ public class LootTablesGen {
         // GENERATION ACTORS
         // Used to simplify some unnecessary code spaghetti in methods above
         //--------------------------------------------------------------------------------------------------------
-        public void oresGen(Block blockProvided, Item itemProvided, Integer amount) {
+        public void oresGen(Block blockProvided, Item itemProvided, Integer amount, Integer chances) {
             this.add(blockProvided, (sTouch) -> {
-                return createBiggerOreDrop(blockProvided, itemProvided, amount);});}
+                return createBiggerOreDrop(blockProvided, itemProvided, amount, chances);});}
 
-        protected static LootTable.Builder createBiggerOreDrop(Block pBlock, Item pItem, Integer amount) {
-            return createSilkTouchDispatchTable(pBlock, applyExplosionDecay(pBlock, LootItem.lootTableItem(pItem).setQuality(amount).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+        protected static LootTable.Builder createBiggerOreDrop(Block pBlock, Item pItem, Integer amount, Integer chances) {
+            // variables for specific type of multipliers
+            LootItemConditionalFunction.Builder<?> fortune_use = ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE);
+            return createSilkTouchDispatchTable(pBlock, applyExplosionDecay(pBlock, LootItem.lootTableItem(pItem).setWeight(chances)
+                    .apply(fortune_use)));
         }
 
         @Override
