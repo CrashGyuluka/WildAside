@@ -10,7 +10,7 @@
     "description": {
       "translate": "adv.wildaside.1desc"
     },
-    "background": "wildaside:block/substilium_stem_top",
+    "background": "wildaside:textures/block/substilium_stem_top.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

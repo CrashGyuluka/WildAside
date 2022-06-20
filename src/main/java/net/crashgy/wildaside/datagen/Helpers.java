@@ -50,9 +50,8 @@ public class Helpers {
     // Class used for blocks that will have manually handled blockstates and models
     public static Boolean manualJsons(Block block) {
         ArrayList<Block> manual_jsons_list = new ArrayList<>();
-        //manual_jsons_list.add(ModBlocks.SUBSTILIUM_STEM.get());
         //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SHROOM.get());
-//      //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SOIL.get());
+        //manual_jsons_list.add(ModBlocks.SUBSTILIUM_SOIL.get());
         manual_jsons_list.add(ModBlocks.VIBRION_GROWTH.get());
         manual_jsons_list.add(ModBlocks.HANGING_VIBRION_VINES.get());
         manual_jsons_list.add(ModBlocks.HANGING_VIBRION_VINES_PLANT.get());

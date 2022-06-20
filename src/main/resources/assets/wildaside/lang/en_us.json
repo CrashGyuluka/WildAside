@@ -17,6 +17,7 @@
   "block.wildaside.entorium_ore": "Entorium Ore",
 
   "item.wildaside.vibrion": "Vibrion",
+  "item.wildaside.entorium": "Entorium",
 
   "effect.wildaside.contaminated": "Contaminated",
 
@@ -26,8 +27,12 @@
 
   "adv.wildaside.1": "Wild, Wilder, Wildest",
   "adv.wildaside.1desc": "Open the world with WildAside for the first time",
-  "adv.wildaside.2": "Fatal DNA Error",
+  "adv.wildaside.2": "Through Hundreds of Mutations",
   "adv.wildaside.2desc": "Have a Vibrion in your inventory",
+  "adv.wildaside.3": "Petrified Antibiotic",
+  "adv.wildaside.3desc": "Have an Entorium in your inventory",
+
+
 
   "itemGroup.wildaside_tab": "WildAside"
 

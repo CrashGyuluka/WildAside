@@ -18,6 +18,11 @@ public class ModItems {
                     .fireResistant()
                     .tab(ModCreativeModeTab.WILDASIDE_TAB).food(ModFoods.VIBRION)));
 
+    public static final RegistryObject<Item> ENTORIUM = ITEMS.register("entorium",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)
+                    .tab(ModCreativeModeTab.WILDASIDE_TAB)));
+
 //    public static final RegistryObject<Item> SPORE = ITEMS.register("spore",
 //            () -> new Item(new Item.Properties()
 //                    .fireResistant()

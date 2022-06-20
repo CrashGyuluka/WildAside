@@ -14,6 +14,7 @@ public class ModTags {
         public static final TagKey<Block> ALL_WILDASIDE_BLOCKS = tag("all_wildaside_blocks");
         public static final TagKey<Block> VIBRION_BLOCKS = tag("vibrion_blocks");
         public static final TagKey<Block> SUBSTILIUM_BLOCKS = tag("substilium_blocks");
+        public static final TagKey<Block> ENTORIUM_BLOCKS = tag("entorium_blocks");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(WildAsideMod.MOD_ID, name));

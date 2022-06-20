@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "entorium",
+  "ingredient": {
+    "item": "wildaside:entorium_ore"
+  },
+  "result": "wildaside:entorium",
+  "experience": 0.5,
+  "cookingtime": 400
+}

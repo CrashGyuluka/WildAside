@@ -200,7 +200,7 @@ public class ModBlocks {
                             .noCollission()
                             .dynamicShape()), ModCreativeModeTab.WILDASIDE_TAB);
 
-    //ENTROIUM BLOCKS
+    //ENTORIUM BLOCKS
 
     public static final RegistryObject<Block> ENTORIUM_ORE = registerBlock("entorium_ore",
             () -> new OreBlock(
@@ -208,8 +208,15 @@ public class ModBlocks {
                             .of(Material.STONE)
                             .strength(4f)
                             .explosionResistance(6f)
-                            .sound(SoundType.STONE), UniformInt.of(0,5)), ModCreativeModeTab.WILDASIDE_TAB);
+                            .sound(SoundType.STONE), UniformInt.of(0,6)), ModCreativeModeTab.WILDASIDE_TAB);
 
+    public static final RegistryObject<Block> DEEPSLATE_ENTORIUM_ORE = registerBlock("deepslate_entorium_ore",
+            () -> new OreBlock(
+                    BlockBehaviour.Properties
+                            .of(Material.STONE)
+                            .strength(6f)
+                            .explosionResistance(7f)
+                            .sound(SoundType.DEEPSLATE), UniformInt.of(0,7)), ModCreativeModeTab.WILDASIDE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {

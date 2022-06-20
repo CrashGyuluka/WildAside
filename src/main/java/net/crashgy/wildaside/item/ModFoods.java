@@ -10,7 +10,7 @@ public class ModFoods {
             (new FoodProperties.Builder())
                     .nutrition(4)
                     .saturationMod(0.6F)
-                    .effect(new MobEffectInstance(MobEffects.POISON, 100, 0), 0.1F)
+                    .effect(new MobEffectInstance(MobEffects.POISON, 100, 0), 0.5F)
                     .alwaysEat()
                     .build();
 }

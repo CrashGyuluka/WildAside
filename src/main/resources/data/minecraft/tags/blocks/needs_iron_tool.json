@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "wildaside:entorium_ore",
+    "wildaside:deepslate_entorium_ore"
   ]
 }

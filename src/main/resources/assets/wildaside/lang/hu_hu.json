@@ -14,10 +14,10 @@
   "block.wildaside.hanging_vibrion_vines": "Lógó Vibrion Inda",
   "block.wildaside.hanging_vibrion_vines_plant": "Lógó Vibrion Inda Ültetvény",
   "block.wildaside.vibrion_sporeholder": "Vibrion Spóratároló",
-  "block.wildaside.entorium_ore": "Entorium Érc",
-
+  "block.wildaside.entorium_ore": "Entórium Érc",
 
   "item.wildaside.vibrion": "Vibrion",
+  "item.wildaside.entorium": "Entórium",
 
   "effect.wildaside.contaminated": "Fertőzöttség",
 
@@ -27,8 +27,10 @@
 
   "adv.wildaside.1": "Vad, Vadabb, Legvadabb",
   "adv.wildaside.1desc": "Nyisd meg világodat a WildAside-dal első alkalommal",
-  "adv.wildaside.2": "Fatális DNS Hiba",
+  "adv.wildaside.2": "Több Száz Mutáción Keresztül",
   "adv.wildaside.2desc": "Legyen az eszköztáradban egy Vibrion",
+  "adv.wildaside.3": "Megkövült Antibiotikum",
+  "adv.wildaside.3desc": "Legyen az eszköztáradban egy Entorium",
 
   "itemGroup.wildaside_tab": "WildAside"
 

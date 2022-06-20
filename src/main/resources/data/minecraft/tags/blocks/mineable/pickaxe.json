@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "wildaside:substilium_soil"
+    "wildaside:substilium_soil",
+    "wildaside:entorium_ore",
+    "wildaside:deepslate_entorium_ore"
   ]
 }

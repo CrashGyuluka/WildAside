@@ -41,9 +41,9 @@ public class ModConfiguredFeatures {
 
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_ENTORIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ENTORIUM_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ENTORIUM_ORE.get().defaultBlockState()));
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ENTORIUM_ORE.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ENTORIUM_ORE = FeatureUtils.register("entorium_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_ENTORIUM_ORES, 9));
+            Feature.ORE, new OreConfiguration(OVERWORLD_ENTORIUM_ORES, 10));
 
 //    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> VIBRION_GROWTH_SPAWN =
 //            FeatureUtils.register("vibrion_growth_checked", Feature.FLOWER,

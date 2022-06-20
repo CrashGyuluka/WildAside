@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "wildaside:entorium"
+    },
+    "title": {
+      "translate": "adv.wildaside.3"
+    },
+    "description": {
+      "translate": "adv.wildaside.3desc",
+      "bold": false,
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "wildaside:wild_wilder_wildest",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wildaside:entorium"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "wildaside:entorium_ore_smell"
+    ],
+    "experience": 3
+  }
+}
