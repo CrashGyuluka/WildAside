@@ -71,20 +71,22 @@ public class LootTablesGen {
                 if (Helpers.modOres(block.get())) {
                     String namingConvention = block.get().getRegistryName().getPath();
                     Item itemProvided = block.get().asItem();
-                    // -------------------------------------------------
+                    Integer amount = 1; // <- change this within "if" part
+                    // if you want to have bigger drops of items than 1
+                    // ---------------------------------------------------
                     // CUSTOM ORE DROPS
                     // If custom drop is not chosen, block will get
                     // silk-touched anyway (like pre-1.17 iron ore)
-                    // -------------------------------------------------
+                    // ---------------------------------------------------
                     if (namingConvention.contains("vibrion_block")) {
                         itemProvided = ModItems.VIBRION.get();
                     }
                     else if (namingConvention.contains("entorium_ore")) {
                         itemProvided = ModItems.ENTORIUM.get();
-                        createBiggerOreDrop(block.get(), itemProvided, 2);
+                        amount = 2;
                     }
-                    //-------------------------------------------------
-                    oresGen(block.get(), itemProvided);
+                    //---------------------------------------------------
+                    oresGen(block.get(), itemProvided, amount);
                 }
                 //-------------------------------------------------
                 // DOORS
@@ -105,9 +107,9 @@ public class LootTablesGen {
         // GENERATION ACTORS
         // Used to simplify some unnecessary code spaghetti in methods above
         //--------------------------------------------------------------------------------------------------------
-        public void oresGen(Block blockProvided, Item itemProvided) {
+        public void oresGen(Block blockProvided, Item itemProvided, Integer amount) {
             this.add(blockProvided, (sTouch) -> {
-                return createOreDrop(blockProvided, itemProvided);});}
+                return createBiggerOreDrop(blockProvided, itemProvided, amount);});}
 
         protected static LootTable.Builder createBiggerOreDrop(Block pBlock, Item pItem, Integer amount) {
             return createSilkTouchDispatchTable(pBlock, applyExplosionDecay(pBlock, LootItem.lootTableItem(pItem).setQuality(amount).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
