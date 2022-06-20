@@ -10,10 +10,13 @@ import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -76,7 +79,7 @@ public class LootTablesGen {
                     if (namingConvention.contains("vibrion_block")) {
                         itemProvided = ModItems.VIBRION.get();
                     }
-                    if (namingConvention.contains("entorium_ore")) {
+                    else if (namingConvention.contains("entorium_ore")) {
                         itemProvided = ModItems.ENTORIUM.get();
                     }
                     //-------------------------------------------------
@@ -104,6 +107,10 @@ public class LootTablesGen {
         public void oresGen(Block blockProvided, Item itemProvided) {
             this.add(blockProvided, (sTouch) -> {
                 return createOreDrop(blockProvided, itemProvided);});}
+
+        protected static LootTable.Builder createBiggerOreDrop(Block pBlock, Item pItem, Integer amount) {
+            return createSilkTouchDispatchTable(pBlock, applyExplosionDecay(pBlock, LootItem.lootTableItem(pItem).setQuality(amount).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+        }
 
         @Override
         protected @NotNull Iterable<Block> getKnownBlocks() {
