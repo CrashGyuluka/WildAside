@@ -81,6 +81,7 @@ public class LootTablesGen {
                     }
                     else if (namingConvention.contains("entorium_ore")) {
                         itemProvided = ModItems.ENTORIUM.get();
+                        createBiggerOreDrop(block.get(), itemProvided, 2);
                     }
                     //-------------------------------------------------
                     oresGen(block.get(), itemProvided);
