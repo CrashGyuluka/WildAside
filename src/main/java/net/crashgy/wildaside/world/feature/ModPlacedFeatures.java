@@ -12,7 +12,7 @@ public class ModPlacedFeatures {
                     PlacementUtils.countExtra(3, 0.2f, 3)));
 
     public static final Holder<PlacedFeature> ENTORIUM_ORE_PLACED = PlacementUtils.register("entorium_ore_placed",
-            ModConfiguredFeatures.ENTORIUM_ORE, ModOrePlacement.commonOrePlacement(13, // VeinsPerChunk
+            ModConfiguredFeatures.ENTORIUM_ORE, ModOrePlacement.commonOrePlacement(10, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
 
 //    public static final Holder<PlacedFeature> VIBRION_GROWTH_PLACED = PlacementUtils.register("vibrion_growth_placed",
