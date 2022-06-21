@@ -26,5 +26,4 @@ public class DataGenManager {
             generator.addProvider(new ItemsGen(generator, event.getExistingFileHelper()));
         }
     }
-
 }

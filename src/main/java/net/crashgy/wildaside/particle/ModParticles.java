@@ -14,7 +14,7 @@ public class ModParticles {
             DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, WildAsideMod.MOD_ID);
 
     public static final RegistryObject<SimpleParticleType> ENTORIUM_PARTICLE =
-            PARTICLE_TYPES.register("entorium_particle", () -> new SimpleAnimatedParticle(true));
+            PARTICLE_TYPES.register("entorium_particle", () -> new SimpleParticleType(true));
 
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
