@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "weight": 2,
+              "quality": 3,
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

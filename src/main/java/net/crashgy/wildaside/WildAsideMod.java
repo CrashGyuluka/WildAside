@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.crashgy.wildaside.block.ModBlocks;
 import net.crashgy.wildaside.effect.ModEffects;
 import net.crashgy.wildaside.item.ModItems;
+import net.crashgy.wildaside.particle.ModParticles;
 import net.crashgy.wildaside.potion.ModPotion;
 import net.crashgy.wildaside.util.BetterBrewingRecipe;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -45,6 +46,8 @@ public class WildAsideMod
 
         ModEffects.register(eventBus);
         ModPotion.register(eventBus);
+
+        ModParticles.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

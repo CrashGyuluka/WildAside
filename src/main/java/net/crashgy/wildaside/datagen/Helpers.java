@@ -3,6 +3,7 @@ package net.crashgy.wildaside.datagen;
 import net.crashgy.wildaside.WildAsideMod;
 import net.crashgy.wildaside.block.ModBlocks;
 import net.crashgy.wildaside.elements.blocks.templated.FlammableBlocks;
+import net.crashgy.wildaside.item.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.OreBlock;

@@ -87,10 +87,12 @@ public class LootTablesGen {
                     // ---------------------------------------------------
                     if (namingConvention.contains("vibrion_block")) {
                         itemProvided = ModItems.VIBRION.get();
+                        amount = 2;
+                        chances = 70;
                     }
                     else if (namingConvention.contains("entorium_ore")) {
                         itemProvided = ModItems.ENTORIUM.get();
-                        amount = 2;
+                        amount = 3;
                     }
                     //---------------------------------------------------
                     oresGen(block.get(), itemProvided, amount, chances);

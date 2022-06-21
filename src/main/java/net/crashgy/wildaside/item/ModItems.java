@@ -1,7 +1,7 @@
 package net.crashgy.wildaside.item;
 
 import net.crashgy.wildaside.WildAsideMod;
-import net.minecraft.world.item.CreativeModeTab;
+import net.crashgy.wildaside.item.custom.Entorium;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,7 +19,7 @@ public class ModItems {
                     .tab(ModCreativeModeTab.WILDASIDE_TAB).food(ModFoods.VIBRION)));
 
     public static final RegistryObject<Item> ENTORIUM = ITEMS.register("entorium",
-            () -> new Item(new Item.Properties()
+            () -> new Entorium(new Item.Properties()
                     .stacksTo(64)
                     .tab(ModCreativeModeTab.WILDASIDE_TAB)));
 
