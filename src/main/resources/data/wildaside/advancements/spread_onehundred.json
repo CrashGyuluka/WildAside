@@ -17,7 +17,7 @@
   },
   "parent": "wildaside:wild_wilder_wildest",
   "criteria": {
-    "all_effects": {
+    "requirement": {
       "trigger": "minecraft:effects_changed",
       "conditions": {
         "effects": {
@@ -26,11 +26,6 @@
       }
     }
   },
-  "requirements":
-  [
-    "all_effects"
-  ],
-
   "rewards": {
     "experience": 10
   }
