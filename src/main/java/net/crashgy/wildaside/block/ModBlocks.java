@@ -175,7 +175,7 @@ public class ModBlocks {
                             .sound(SoundType.SHROOMLIGHT)
                             .noOcclusion()
                             .noCollission()
-                            .dynamicShape()), CreativeModeTab.TAB_SEARCH);
+                            .dynamicShape()), null);
 
     public static final RegistryObject<Block> VIBRION_SPOREHOLDER = registerBlock("vibrion_sporeholder",
             () -> new VibrionSporeholder(
