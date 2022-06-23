@@ -3,6 +3,7 @@ package net.crashgy.wildaside.event;
 import net.crashgy.wildaside.WildAsideMod;
 import net.crashgy.wildaside.particle.ModParticles;
 import net.crashgy.wildaside.particle.custom.EntoriumParticle;
+import net.crashgy.wildaside.particle.custom.VibrionParticle;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
@@ -38,5 +39,7 @@ public class ModEventBusEvents {
     public static void registerParticleFactories(final ParticleFactoryRegisterEvent event) {
         Minecraft.getInstance().particleEngine.register(ModParticles.ENTORIUM_PARTICLE.get(),
                 EntoriumParticle.Provider::new);
+        Minecraft.getInstance().particleEngine.register(ModParticles.VIBRION_PARTICLE.get(),
+                VibrionParticle.Provider::new);
     }
 }

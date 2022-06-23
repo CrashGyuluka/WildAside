@@ -136,7 +136,7 @@ public class ModBlocks {
 //                            .requiresCorrectToolForDrops()), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> VIBRION_BLOCK = registerBlock("vibrion_block",
-            () -> new OreBlock(
+            () -> new VibrionBlock(
                     BlockBehaviour.Properties
                             .of(Material.VEGETABLE)
                             .strength(2.3f)
@@ -203,7 +203,7 @@ public class ModBlocks {
     //ENTORIUM BLOCKS
 
     public static final RegistryObject<Block> ENTORIUM_ORE = registerBlock("entorium_ore",
-            () -> new OreBlock(
+            () -> new EntoriumOre(
                     BlockBehaviour.Properties
                             .of(Material.STONE)
                             .strength(4f)
@@ -211,7 +211,7 @@ public class ModBlocks {
                             .sound(SoundType.STONE), UniformInt.of(0,6)), ModCreativeModeTab.WILDASIDE_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_ENTORIUM_ORE = registerBlock("deepslate_entorium_ore",
-            () -> new OreBlock(
+            () -> new EntoriumOre(
                     BlockBehaviour.Properties
                             .of(Material.STONE)
                             .strength(6f)
